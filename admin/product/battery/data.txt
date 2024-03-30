@@ -1,0 +1,15 @@
+	// End of Specifications
+		// Get Data from b_graph
+		$b_graph = $connection->query("select * from b_graph where BID='$BID'");
+		$row_b_graph = $b_graph->fetch_array(MYSQLI_BOTH);
+		// Get Data from b_gallery
+		$b_gallery = $connection->query("select * from b_gallery where BID='$BID'");
+		$row_b_gallery = $b_gallery->fetch_array(MYSQLI_BOTH);
+		// Get Data from b_support
+		$b_support = $connection->query("select * from b_support where BID='$BID'");
+		$row_b_support = $b_support->fetch_array(MYSQLI_BOTH);
+		// Get Data from sitedetails
+		$sitedetails = $connection->query("select * from sitedetails");
+		$row_sitedetails = $sitedetails->fetch_array(MYSQLI_BOTH);
+	}
+?>
